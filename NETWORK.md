@@ -1,15 +1,10 @@
-# 🌐 Zion App Network — Interlinks
+# Zion Blog
 
-**blog** is part of the Zion Tech Group app network (630+ apps).
+Zion Tech Group blog.
 
-- 📇 [Master Index](https://github.com/Zion-support/zion-network/blob/main/APPS_NETWORK.md)
-- 🗂️ Category: [Data & Analytics](https://github.com/Zion-support/zion-network/blob/main/network/data-analytics.md)
+## Network
+- 📚 Master catalog: [zion-app-network/CATALOG.md](https://github.com/Zion-support/zion-app-network/blob/main/CATALOG.md)
+- Hubs: [zion-app-network](https://github.com/Zion-support/zion-app-network) · [zion-network](https://github.com/Zion-support/zion-network)
+- Sites: [case-studies](https://github.com/Zion-support/case-studies) · [success-stories](https://github.com/Zion-support/success-stories) · [zion-support.github.io](https://github.com/Zion-support/zion-support.github.io) · [zion-status](https://github.com/Zion-support/zion-status)
 
-## Related apps
-- [case-studies](https://github.com/Zion-support/case-studies) — client case studies
-- [success-stories](https://github.com/Zion-support/success-stories) — success stories
-- [ai-services](https://github.com/Zion-support/ai-services) — AI services catalog
-- [zion-network](https://github.com/Zion-support/zion-network) — network hub
-
----
-🌐 [Network Index](https://github.com/Zion-support/zion-network/blob/main/APPS_NETWORK.md) · [Status](https://zion-support.github.io/zion-status/) · [Plans](https://zion-support.github.io/zion-plans/) · [Portal](https://zion-support.github.io/zion-portal/)
+*Zion Tech Group · [ziontechgroup.com](https://ziontechgroup.com)*
