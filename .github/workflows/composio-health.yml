@@ -18,13 +18,21 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Install Composio CLI
+        id: install
         run: |
-          curl -fsSL https://composio.dev/install | bash
-          echo "$HOME/.local/bin" >> $GITHUB_PATH
+          if curl -fsSL https://composio.dev/install | bash; then
+            echo "installed=true" >> "$GITHUB_OUTPUT"
+            echo "$HOME/.local/bin" >> $GITHUB_PATH
+          else
+            echo "installed=false" >> "$GITHUB_OUTPUT"
+            echo "::warning::Composio CLI install failed upstream (no composio-linux-x64.zip asset in latest release). Skipping CLI checks."
+          fi
 
-      - run: composio whoami 2>&1 || echo "WHOAMI_FAILED"
+      - if: steps.install.outputs.installed == 'true'
+        run: composio whoami 2>&1 || echo "WHOAMI_FAILED"
 
       - name: List Connections
+        if: steps.install.outputs.installed == 'true'
         run: |
           echo "=== Connections ==="
           composio connections list 2>&1
